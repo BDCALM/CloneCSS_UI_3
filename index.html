@@ -17,18 +17,9 @@
     <!-- Rule: Mobile first -> Desktop
         Responsive for mobile and desktop-->
     <div class="w-full min-h-screen bg-[#e6f1f2]
-            grid grid-rows-[0.1fr_0.25fr_1fr_1fr_1fr_1fr_1.5fr_1.5fr]
-            grid-cols-[1fr_2fr_3fr_3fr_2fr_1fr] md:grid-cols-12 gap-1">
+            grid grid-rows-[0.1fr_0.25fr_1fr_1fr_1fr_1fr_1fr_0.5fr_0.1fr]
+            grid-cols-[1fr_2fr_3fr_3fr_2fr_1fr] md:grid-cols-12 gap-0.5">
         <!-- Header -->
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
-                <div class="bg-orange-600">1</div>
                 
 
             <!--Bg-white: Title, Premium page and Call Now-->
@@ -83,7 +74,8 @@
                     <p class = "text-sm md:text-md"> Check out our features to see how we can help you achieve your goals.</p>
                 </div>
 
-                <div id = "buttons" class ="flex flex-row gap-4 items-center
+                <div id = "buttons" class ="flex flex-row gap-4 md:w-80
+                                            items-center
                                             mt-4 
                                             font-bold">
                     <button class = "bg-gradient-to-b from-[#ecab72] to-[#e78611f9] hover:from-25% to-95% border-4 border-gray-100
@@ -199,20 +191,185 @@
             
          </div>
 
-        <!--Screenshots-->
+        <!--Screenshots 4 screenshots on a line-->
+         <div class ="row-start-6 col-start-2
+                    row-end-7 col-end-6
+                    md:row-start-6 md:col-end-12
+                    bg-white p-3 md:p-5
+                    ">
+            <h3 class ="text-xl font-semibold mb-4 mt-4"> The screenshots</h3>
+            <div class = " md:px-4 md:py-4
+                    grid grid-rows-2 grid-cols-2
+                    lg:grid-rows-1 lg:grid-cols-4
+                    gap-4"> 
+                   <!--First img: special, overlap two images-->
+                <div class="relative 
+                            row-start-1 col-start-1 
+                            row-end-2 col-end-2">
+                <a href="#screenshot1" class="block">
+                    <img
+                    class="absolute w-full h-full opacity-50 z-10 border-4 border-gray-200 shadow-lg md:drop-shadow-2xl "
+                    src="./image/iconKinhLup.svg"
+                    alt="Overlay Icon"
+                    />
+                    <img
+                    class="absolute w-full h-full border-4 border-gray-200 shadow-lg hover:scale-105 transition-transform duration-300md:drop-shadow-2xl"
+                    src="./image/monitorImg.jpg"
+                    alt="Screenshot 1"
+                    />
+                </a>
+                </div>
+                <img class = "h-40 w-full shadow-lg md:drop-shadow-2xl border-4 border-gray-200" src="./image/monitorImg.jpg" alt="Screenshot 2">
+                <img class = "h-40 w-full shadow-lg md:drop-shadow-2xl border-4 border-gray-200" src="./image/monitorImg.jpg" alt="Screenshot 3">
+                <img class = "h-40 w-full shadow-lg md:drop-shadow-2xl border-4 border-gray-200" src="./image/monitorImg.jpg" alt="Screenshot 4">
+            </div>
+         </div>
 
-        <!--Feedbacks from customers-->
 
 
+        <!--Feedbacks from customers
+         h3: See what our customers are saying...
+          |text block|_ Mike Tyson, Microsoft
+            |text block|_ Elon Musk, Tesla
+            <button class="purchase-button">Purchase now!</button>
+            <button class="tour-button">Take a tour</button>
+        -->
+        <div class="row-start-7 col-start-2
+            row-end-8 col-end-6
+            md:row-start-7 md:col-end-12
+            p-8 bg-white">
+        <h3 class="text-lg font-semibold mb-6 text-gray-800">
+            See what our customers are saying...
+        </h3>
+        <div id ="cmt-buttons-wrapper"
+            class = "flex flex-col items-center
+                    md:justify-between gap-6">
+            <!--Comments-->
+            <div id="comments"
+                class="testimonial-box bg-gradient-to-b from-[#d0d2d3ce] to-[#b9c6c7d8]
+                        w-4/5 p-6 rounded-2xl shadow-lg
+                        flex flex-col gap-6">
+                    <!-- Comment -->
+                    <div class="bg-white p-4 rounded-xl shadow-md 
+                                flex items-start gap-4 justify-center
+                                hover:shadow-lg transition-shadow duration-300">
+                    <div>
+                        <p class="text-gray-700 italic text-center">
+                        “This platform really helped us grow our business. Super easy to use and the support team is very amazing and professional! ”
+                        </p>
+                        <h4 class="mt-2 font-semibold text-gray-900 flex justify-end">— Mike Tyson, Microsoft —</h4>
+                    </div>
+                </div>
+            
+            </div>
+        <!--Buttons-->   
 
-        <!--Buttons-->
-
-
-        <!--Footer-->
+            <div id = "buttons" class ="flex flex-row gap-4 md:w-80
+                                        items-center
+                                        mt-4 
+                                        font-bold">
+                        <button class = "bg-gradient-to-b from-[#ecab72] to-[#e78611f9] hover:from-30% to-75% border-4 border-gray-100
+                                        text-orange-800 rounded-full
+                                        w-40 h-12  
+                                        ">Purchase now!
+                        </button>
+                        <p class =" "> or </p>
+                        <button class = "
+                                        bg-gradient-to-b from-[#cdcfd4] to-[#9c9a98f9] hover:from-30% to-75%
+                                        border-4 border-gray-100 
+                                        text-gray-600 rounded-full
+                                        w-40 h-12
+                                        ">Take a tour
+                        </button>
+                    </div>
+        </div>
         
+    </div>
+
+    <!--Footer: Payment method, Get in touch, Design details, Titile Logo-->
+        <!--Grid-->        
+    <div class = "row-start-8 col-start-2
+                    row-end-9 col-end-6
+                    md:col-end-12
+                    bg-[#454444] p-3 md:p-5
+                    grid grid-rows-2 grid-cols-2
+                    md:grid-rows-1 md:grid-cols-4
+                    ">
+            <!--Flex-->
+            <div class = "row-start-1 col-start-1
+                        row-end-2 col-end-3
+                        md:col-end-3
+                        flex flex-row
+                        justify-start
+                        text-gray-300
+                        gap-6 md:gap-12 
+                        ">
+                <!--Payment method-->
+                <div id = "payment-method" class ="md:w-2/4">
+                    <h3 class = "text-lg font-semibold">Payment method</h3>
+                    <p> We accept all major credit cards such as Master card, Visa and Master card. </p>
+                    
+                    <div id ="payment-logo" class ="flex flex-row gap-5 md:gap-3 mt-3"> 
+                        <!--Payment logo-->
+                        <a href="#master-card"> <img src="./image/Payment/masterCard.png" class="w-6 h-6"  alt="Payment Logos" /></a>
+                        <a href="#visa"> <img src="./image/Payment/visa.png" class="w-6 h-6"  alt="Payment Logos" /></a>
+                        <a href="#paypal"> <img src="./image/Payment/paypal.png" class="w-6 h-6"  alt="Payment Logos" /></a>
+                    </div>
+                </div>
+                <!--Get in touch-->
+                <div id = "get-in-touch" class ="">
+                    <h3 class = "text-lg font-semibold ">Get in touch</h3>
+                    <p>123 Main Street Name #3</br> San Fracisco, CA, 94101 </br>Phone: (866) 123-4567 ext#1 </br> FAX: (866) 132-0000 </br> Email:webdesign@sheby.pl</p>
+                </div>
+
+            </div> <!--End of Flex-->
+
+            <!--Flex-->
+            <div class =" row-start-2 col-start-1
+                            row-end-3 col-end-3
+                            md:row-start-1 md:col-start-3
+                            md:row-end-2 md:col-end-5
+                            flex flex-row
+                             md:justify-end
+                             justify-between
+                            text-gray-300
+                            mt-4 md:mt-0
+                            gap-6
+                            ">
+                <!--Design details-->
+                <div id = "design-details" class ="md:w-2/4">
+                    <h3 class = "text-lg font-semibold">Design details</h3>
+                    <p>Design by Shegy. </br> Images by Unsplash. </br> Coded by Nguyen Van Binh Duong.</p>
+                </div>
+                
+                <!--Title Logo-->
+                <div>
+                    <img src="./image/blackWhiteTitle.png.svg" alt="Logo" class="w-24 h-12 mt-10 mr-10 md:mr-0 md:mt-0" />
+                </div>
+            </div>
+        </div> 
+
         
-    </div> <!--End of Grid cols-->
 
-
+        <!--Grid-->
+    <!--Below footer-->
+        <div class = "row-start-9 col-start-2
+                            row-end-10 col-end-6
+                            md:col-end-12
+                            bg-gray-900 p-3 md:p-5
+                            flex justify-between items-center
+                            text-gray-400
+                            ">
+                <p class = "text-xs md:text-md">Copyright © 2011 Target. All rights reserved. Designed by <span class = "text-xs md:text-md text-orange-400">Shegy</span> </p> 
+                <div>
+                    <a href ="#Linkedln"> <img class="inline-block rounded-full w-4 h-4 md:w-6 md:h-6 bg-white" src="./image/ForFooter/linkedinLogo.png" alt="LinkedIn" > </a> | 
+                    <a href ="#Youtube"> <img class="inline-block rounded-full w-4 h-4 md:w-6 md:h-6 bg-white" src="./image/ForFooter/youtubeLogo.png" alt="YouTube" > </a> | 
+                    <a href ="#Twitter"> <img class="inline-block rounded-full w-4 h-4 md:w-6 md:h-6 bg-white" src="./image/ForFooter/twitterLogo.png" alt="Twitter" > </a> | 
+                    <a href ="#Instagram"> <img class="inline-block rounded-full w-4 h-4 md:w-6 md:h-6 bg-white" src="./image/ForFooter/instagramLogo.png" alt="Instagram" > </a> | 
+                    <a href ="#Tiktok"> <img class="inline-block rounded-full w-4 h-4 md:w-6 md:h-6 bg-white" src="./image/ForFooter/tiktokLogo.png" alt="TikTok" > </a>
+                </div>
+        </div>
+        
+    </div> <!--End of Main Grid-->
   </body>
 </html>
